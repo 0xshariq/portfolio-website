@@ -15,7 +15,7 @@ Built with Next.js, [Shadcn/ui](https://ui.shadcn.com/), and [Magic ui](https://
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/0xshariq/portfolio
+   git clone https://github.com/0xshariq/portfolio.git
    ```
 
 2. Move to the cloned directory
