@@ -108,7 +108,7 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               <div
                 key={project.title}
-                className="transition-transform duration-300 ease-in-out hover:-translate-y-2"
+                className="transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
               >
                 <BlurFade
                   key={project.title}
