@@ -203,6 +203,33 @@ export const DATA = {
       ],
       image: "/wordpress.png",
       video: "",
+    },
+    {
+      title: "SaaS Landing Page",
+      href: "https://saas-landing-page-app.vercel.app/",
+      dates: "Dec 2024",
+      active: true,
+      description:
+        "Video Maker",
+      technologies: [
+        "ReactJS",
+        "Vite",
+        "TailwindCSS"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://saas-landing-page-app.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/saas-landing-page-app.git",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/",
+      video: "",
     }
   ]
 } as const;
