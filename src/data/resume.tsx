@@ -210,7 +210,7 @@ export const DATA = {
       dates: "Dec 2024",
       active: true,
       description:
-        "Video Maker",
+        "SaaS landing page.",
       technologies: [
         "ReactJS",
         "Vite",
