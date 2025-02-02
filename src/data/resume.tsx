@@ -230,6 +230,33 @@ export const DATA = {
       ],
       image: "/saas.png",
       video: "",
+    },
+    {
+      title: "Weather API",
+      href: "https://weather-api-7qxy.onrender.com/",
+      dates: "Jan 2025",
+      active: true,
+      description:
+        "",
+      technologies: [
+       "ExpressJS",
+       "MongoDB",
+       "NodeJS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://weather-api-7qxy.onrender.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/weather-api.git",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/weather-api.png",
+      video: "",
     }
   ]
 } as const;
