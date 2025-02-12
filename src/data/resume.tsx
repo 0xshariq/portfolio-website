@@ -257,6 +257,33 @@ export const DATA = {
       ],
       image: "/weather-api.png",
       video: "",
+    },
+    {
+      title: "Quran API",
+      href: "https://quran-api-ny11.onrender.com/",
+      dates: "Jan 2025",
+      active: true,
+      description:
+        "",
+      technologies: [
+       "ExpressJS",
+       "MongoDB",
+       "NodeJS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://quran-api-ny11.onrender.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/quran-api.git",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/quran-api.png",
+      video: "",
     }
   ]
 } as const;
