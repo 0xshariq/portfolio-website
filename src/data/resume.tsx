@@ -237,7 +237,7 @@ export const DATA = {
       dates: "Jan 2025",
       active: true,
       description:
-        "",
+        "Read the docs for more information.",
       technologies: [
        "ExpressJS",
        "MongoDB",
@@ -264,11 +264,12 @@ export const DATA = {
       dates: "Jan 2025",
       active: true,
       description:
-        "",
+        "Read the docs for more information.",
       technologies: [
        "ExpressJS",
        "MongoDB",
        "NodeJS",
+       "ImageKit"
       ],
       links: [
         {
