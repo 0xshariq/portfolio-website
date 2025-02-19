@@ -232,58 +232,31 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Weather API",
-      href: "https://weather-api-7qxy.onrender.com/",
-      dates: "Jan 2025",
+      title: "API Documentation",
+      href: "https://api-docs-gilt.vercel.app//",
+      dates: "Feb 2025",
       active: true,
       description:
-        "Read the docs for more information.",
+        "All API documentation in one place.",
       technologies: [
-       "ExpressJS",
-       "MongoDB",
-       "NodeJS",
+       "NextJS",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI"
       ],
       links: [
         {
           type: "Website",
-          href: "https://weather-api-7qxy.onrender.com/",
+          href: "https://api-docs-gilt.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/0xshariq/weather-api.git",
+          href: "https://github.com/0xshariq/api-docs.git",
           icon: <Icons.github className="size-3" />,
         }
       ],
-      image: "/weather-api.png",
-      video: "",
-    },
-    {
-      title: "Quran API",
-      href: "https://quran-api-ny11.onrender.com/",
-      dates: "Jan 2025",
-      active: true,
-      description:
-        "Read the docs for more information.",
-      technologies: [
-       "ExpressJS",
-       "MongoDB",
-       "NodeJS",
-       "ImageKit"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://quran-api-ny11.onrender.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/0xshariq/quran-api.git",
-          icon: <Icons.github className="size-3" />,
-        }
-      ],
-      image: "/quran-api.png",
+      image: "/api-docs.png",
       video: "",
     }
   ]
