@@ -258,6 +258,35 @@ export const DATA = {
       ],
       image: "/api-docs.png",
       video: "",
+    },
+    {
+      title: "Profession Predictor",
+      href: "https://profession-predictor.vercel.app/",
+      dates: "Feb 2025",
+      active: true,
+      description:
+        "Predict your profession.",
+      technologies: [
+       "NextJS",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Next Auth"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://profession-predictor.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/Profession-Predictor.git",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/profession.png",
+      video: "",
     }
   ]
 } as const;
