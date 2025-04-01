@@ -287,6 +287,63 @@ export const DATA = {
       ],
       image: "/profession.png",
       video: "",
+    },
+    {
+      title: "Custom AI Chatbot",
+      href: "https://ai-powered-chatbot-sage.vercel.app",
+      dates: "Feb 2025",
+      active: true,
+      description:
+        "AI Integrate to generate text,images and videos",
+      technologies: [
+       "NextJS",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Next Auth"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://ai-powered-chatbot-sage.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/ai-powered-chatbot.git",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/profession.png",
+      video: "",
+    },
+    {
+      title: "Typing Speed Tester",
+      href: "https://typing-speed-tester-omega.vercel.app/",
+      dates: "March 2025",
+      active: true,
+      description:
+        "Test your typing speed.",
+      technologies: [
+       "NextJS",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://typing-speed-tester-omega.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/typing-speed-tester.git",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/profession.png",
+      video: "",
     }
   ]
 } as const;
