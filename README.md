@@ -1,4 +1,4 @@
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xshariq%2Fportfolio-website)
 
 Built with Next.js, [Shadcn/ui](https://ui.shadcn.com/), and [Magic ui](https://magicui.design/), deployed on Vercel.
 

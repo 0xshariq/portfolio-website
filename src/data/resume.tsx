@@ -294,7 +294,7 @@ export const DATA = {
       dates: "Feb 2025",
       active: true,
       description:
-        "AI Integrate to generate text,images and videos",
+        "AI Integrate to generate text,images and videos.",
       technologies: [
        "NextJS",
         "Typescript",
