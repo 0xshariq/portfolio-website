@@ -314,7 +314,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         }
       ],
-      image: "/profession.png",
+      image: "/ai-chatbot.png",
       video: "",
     },
     {
@@ -342,7 +342,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         }
       ],
-      image: "/profession.png",
+      image: "/typing.png",
       video: "",
     }
   ]
