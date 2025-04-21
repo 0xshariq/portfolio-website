@@ -100,6 +100,29 @@ export const DATA = {
         "",
     },
     {
+      title: "Amanah Banking System",
+      href: "https://amanah-blush.vercel.app/",
+      dates: "April 2025",
+      active: true,
+      description:
+        "A Halal banking system.",
+      technologies: [
+       "NextJS",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://amanah-blush.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/amanah.png",
+      video: "",
+    },
+    {
       title: "Extra Care Medical Center",
       href: "https://hospital-website-ashy-eight.vercel.app",
       dates: "Sept 2024",
