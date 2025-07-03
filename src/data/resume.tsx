@@ -7,9 +7,9 @@ export const DATA = {
   url: "https://portfolio-sigma-rose-22.vercel.app/",
   location: "Mumbai , India",
   locationLink: "https://www.google.com/maps/place/mumbai",
-  description: "Future Full Stack Developer",
+  description: "Full Stack Developer",
   summary:
-    "I am a software engineer who loves to build web applications. I have experience in building web applications using React, Next.js, and Node.js. I am always eager to learn new technologies and improve my skills. I am a quick learner and a team player. I am always ready to take on new challenges and solve problems.Almost Master In Front-End Development.Now,I am learning Back-End Development",
+    "I am a passionate Full Stack Developer with a keen interest in building innovative web applications. I have experience in developing responsive and user-friendly interfaces using ReactJS, NextJS, and TailwindCSS. I am also proficient in backend development with NodeJS and ExpressJS, and I have a strong understanding of database management with MongoDB. I am always eager to learn new technologies and improve my skills. I believe in writing clean, maintainable code and following best practices in software development. I am currently pursuing a B.Tech in Computer Science and looking for internship opportunities to gain practical experience in the industry. I am excited to contribute to projects that make a difference and help solve real-world problems. I am also interested in exploring AI and machine learning technologies to enhance my web applications. I am a team player and enjoy collaborating with others to achieve common goals. I am committed to continuous learning and professional growth in the field of web development. I am looking forward to connecting with like-minded individuals and organizations that share my passion for technology and innovation. I am open to new opportunities and challenges that will help me grow as a developer and make a positive impact in the tech community.",
   avatarUrl: "/me.jpeg",
   skills: [
     "ReactJS",
@@ -86,7 +86,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/0xshariq/Learning-Management-System",
+          href: "https://github.com/0xshariq/edulearn-lms",
           icon: <Icons.github className="size-3" />,
         },
       ],
