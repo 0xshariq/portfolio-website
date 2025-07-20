@@ -103,11 +103,6 @@ export const DATA = {
       technologies: ["NodeJS", "MCP"],
       links: [
         {
-          type: "Website",
-          href: "https://github.com/0xshariq/github-mcp-server",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/0xshariq/github-mcp-server",
           icon: <Icons.github className="size-3" />,
