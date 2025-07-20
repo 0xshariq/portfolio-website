@@ -99,7 +99,7 @@ export const DATA = {
       dates: "July 2024",
       active: true,
       description:
-        "A server that provides a REST API for GitHub repositories, allowing users to search and retrieve repository information.",
+        "A server that provides a MCP server.In which, we can perform git operations through LLMs.",
       technologies: ["NodeJS", "MCP"],
       links: [
         {
