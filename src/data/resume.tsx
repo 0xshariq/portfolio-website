@@ -94,6 +94,29 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Github MCP Server",
+      href: "https://github.com/0xshariq/github-mcp-server",
+      dates: "July 2024",
+      active: true,
+      description:
+        "A server that provides a REST API for GitHub repositories, allowing users to search and retrieve repository information.",
+      technologies: ["NodeJS", "MCP"],
+      links: [
+        {
+          type: "Website",
+          href: "https://github.com/0xshariq/github-mcp-server",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/github-mcp-server",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/edulearn-lms.png",
+      video: "",
+    },
+    {
       title: "Quran App",
       href: "https://quran-next-app.vercel.app/",
       dates: "Oct - 2024",
