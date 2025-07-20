@@ -113,7 +113,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/edulearn-lms.png",
+      image: "/gmcp.png",
       video: "",
     },
     {
