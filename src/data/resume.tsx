@@ -136,7 +136,7 @@ export const DATA = {
     },
     {
       title: "Amanah Banking System",
-      href: "https://amanah-blush.vercel.app/",
+      href: "https://amanah-website.vercel.app//",
       dates: "April 2025",
       active: true,
       description: "A Halal banking system.",
@@ -144,7 +144,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://amanah-blush.vercel.app/",
+          href: "https://amanah-website.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
