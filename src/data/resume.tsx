@@ -136,7 +136,7 @@ export const DATA = {
           icon: <Icons.npm className="size-3" />
         }
       ],
-      image: "/gmcp.png",
+      image: "/package.png",
       video: "",
     },
     {

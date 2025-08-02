@@ -2,7 +2,7 @@ import { getBlogPosts, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+// import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 export async function generateStaticParams() {
@@ -61,7 +61,8 @@ export default async function Blog({
   let post = await getPost(params.slug);
 
   if (!post) {
-    notFound();
+    // Return a 404 page if post is not found
+    return <h1>404 - Blog post not found</h1>;
   }
 
   return (

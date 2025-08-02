@@ -1,0 +1,165 @@
+---
+title: "Introducing Package Installer CLI: Modern Web App Scaffolding Made Easy"
+publishedAt: "2025-08-02"
+summary: "Package Installer CLI Tool"
+---
+
+
+# 🚀 Package Installer CLI: Modern Web App Scaffolding Made Easy
+
+## Introduction
+
+Modern web development is fast-paced, but setting up a new project can still be tedious and error-prone. Developers often spend hours configuring frameworks, languages, UI libraries, databases, and ORMs before writing a single line of business logic. **Package Installer CLI** solves this by providing a beautiful, interactive, and highly flexible CLI that scaffolds production-ready projects in minutes.
+
+## Motivation
+
+Why another CLI? Most existing tools are either framework-specific or lack flexibility for full-stack, multi-language, or database-driven setups. Package Installer CLI is designed for:
+
+- **Polyglot teams**: Supports JavaScript, TypeScript, Rust, and more
+- **Full-stack development**: Easily combine frontend and backend templates
+- **Rapid prototyping**: Get started with best practices and modern tooling
+- **Customization**: Choose exactly what you need—UI libraries, bundlers, src structure, Tailwind CSS, database, ORM, etc.
+
+## ✨ Key Features
+
+- **Interactive CLI** with beautiful UI and strict prompt order
+- **Argument-based project name** (supports `pi my-app` or `pi .` for current directory)
+- **Framework, language, and UI library selection**
+- **Dynamic database & ORM selection** (ORMs shown are specific to the selected database)
+- **Automatic dependency installation** (`pnpm` or `npm`)
+- **Cross-platform path handling**
+- **Graceful exit and error messaging**
+- **Combination templates** for full-stack setups
+- **Extensible via `template.json`**
+
+## 🆕 What's New: Database-Specific ORM Selection
+
+The latest release introduces **database-specific ORM selection**. When you choose a database (e.g., PostgreSQL, MySQL, MongoDB), the CLI only shows ORMs compatible with that database, as defined in `template.json`. This prevents mismatches and streamlines setup.
+
+<Highlight>
+{`
+if (database && fwConfig.databases[database] && Array.isArray(fwConfig.databases[database].orms)) {
+  const dbOrms = fwConfig.databases[database].orms;
+  if (dbOrms.length > 0) {
+    // Prompt for ORM selection
+  }
+}
+`}
+</Highlight>
+
+## Installation
+
+Install globally via npm:
+
+```bash
+npm install -g package-installer-cli
+```
+
+## CLI Walkthrough
+
+### 1. Start the CLI
+
+```bash
+pi my-app
+# or
+package-installer my-app
+```
+
+### 2. Interactive Prompts
+
+You'll be guided through a series of questions:
+
+- **Project name**: Use argument or prompt
+- **Framework**: React, Next.js, Vue, Angular, Express, Rust, etc.
+- **Language**: TypeScript, JavaScript, Rust
+- **UI library**: Shadcn, Material UI, etc. (if available)
+- **Bundler**: Vite, Webpack, etc. (framework-specific)
+- **Src directory**: Choose if you want a `src/` structure
+- **Tailwind CSS**: Add Tailwind for modern styling
+- **Database**: Select from supported databases
+- **ORM**: Only ORMs compatible with your database are shown
+
+### 3. Project Creation & Dependency Installation
+
+The CLI copies the selected template, installs dependencies (`pnpm` or `npm`), and provides next steps.
+
+### 4. Success Message & Next Steps
+
+You'll see a styled summary with commands to start development, build, and more.
+
+## Advanced Features
+
+- **Combination Templates**: Scaffold full-stack projects with pre-configured frontend and backend
+- **Rust Support**: Build modern Rust apps with basic or advanced templates
+- **Graceful Exit**: Beautiful goodbye and error messages
+- **Auto-detection**: Installs dependencies using the best available package manager
+
+## Template Configuration: `template.json`
+
+The CLI is powered by a flexible `template.json` file. Here’s a simplified example:
+
+```json
+{
+  "frameworks": {
+    "nextjs": {
+      "languages": ["typescript", "javascript"],
+      "ui": ["shadcn", "material-ui"],
+      "databases": {
+        "postgresql": { "orms": ["prisma", "typeorm"] },
+        "mongodb": { "orms": ["mongoose"] },
+        "none": { "orms": [] }
+      },
+      "options": ["src", "tailwind"],
+      "bundlers": ["vite", "webpack"]
+    }
+    // ... other frameworks ...
+  }
+}
+```
+
+You can easily add new frameworks, languages, databases, or ORMs by editing this file.
+
+## Real-World Use Cases
+
+- **Startup MVP**: Quickly scaffold a Next.js + PostgreSQL + Prisma app
+- **Enterprise**: Standardize project structure for teams
+- **Hackathons**: Save time on setup, focus on building
+- **Learning**: Explore different stacks and configurations
+
+## Troubleshooting & Tips
+
+- If a template is missing, check the `templates/` directory and `template.json`
+- Use `pi .` to scaffold in the current directory
+- For Rust projects, ensure you have `cargo` installed
+- For full-stack templates, run frontend and backend in separate terminals
+- Check the generated `README.md` for framework-specific instructions
+
+## Roadmap & Future Plans
+
+- **More frameworks**: Svelte, SolidJS, Python/Django, etc.
+- **Custom template creation**: User-defined templates
+- **Plugin system**: Extend CLI with custom logic
+- **Cloud integration**: Deploy directly from CLI
+
+## Example Workflow
+
+```bash
+$ pi my-app
+🚀 Choose a framework: Next.js
+💻 Choose a language: TypeScript
+🧩 Do you want to add a UI library? Yes
+✨ Choose a UI library: Shadcn
+📦 Choose a bundler: Vite  ( only for reactjs and reactjs combination templates )
+📂 Do you want a src directory? Yes
+🎨 Do you want to use Tailwind CSS? Yes
+🗄️ Choose a database: PostgreSQL
+🔧 Choose an ORM: Prisma
+```
+
+## Conclusion
+
+Package Installer CLI is the fastest way to start modern web projects with best practices, flexibility, and beautiful developer experience. Whether you’re building a startup MVP, a full-stack enterprise app, or just learning, this CLI will save you time and help you focus on what matters—building great software.
+
+---
+
+Ready to build your next modern web app? Try Package Installer CLI today!
