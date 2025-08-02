@@ -122,7 +122,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/0xshariq/",
+          href: "https://github.com/0xshariq/package-installer-cli",
           icon: <Icons.github className="size-3" />,
         },
         {
