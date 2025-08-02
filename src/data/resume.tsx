@@ -112,6 +112,34 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Package Installer CLI Tool",
+      href: "https://github.com/0xshariq/package-installer-cli",
+      dates: "July 2024",
+      active: true,
+      description:
+        "A command-line tool for installing pre-configured templates for nextjs,reactjs and many more.",
+      technologies: ["NodeJS", "CLI"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />
+        },
+        {
+          type: "NPM",
+          href: "https://www.npmjs.com/package/package-installer-cli",
+          icon: <Icons.npm className="size-3" />
+        }
+      ],
+      image: "/gmcp.png",
+      video: "",
+    },
+    {
       title: "Quran App",
       href: "https://quran-next-app.vercel.app/",
       dates: "Oct - 2024",
@@ -136,7 +164,7 @@ export const DATA = {
     },
     {
       title: "Amanah Banking System",
-      href: "https://amanah-website.vercel.app//",
+      href: "https://amanah-website.vercel.app/",
       dates: "April 2025",
       active: true,
       description: "A Halal banking system.",

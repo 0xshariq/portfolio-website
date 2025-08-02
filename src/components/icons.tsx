@@ -20,7 +20,16 @@ export const Icons = {
       <path
         fill="currentColor"
         d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-      />
+      />e
+    </svg>
+  ),
+  npm: (props: IconProps) => (
+    <svg viewBox="0 0 780 250" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>npm</title>
+      <rect width="780" height="250" fill="#CB3837" />
+      <path fill="#FFF" d="M0 0v250h780V0H0zm730 200h-680V50h680v150z" />
+      <path fill="#CB3837" d="M70 70v110h640V70H70zm60 90V90h60v70h-60zm80 0V90h60v70h-60zm80 0V90h60v70h-60zm80 0V90h60v70h-60zm80 0V90h60v70h-60zm80 0V90h60v70h-60zm80 0V90h60v70h-60zm80 0V90h60v70h-60z" />
+      <text x="390" y="170" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="120" fill="#FFF">npm</text>
     </svg>
   ),
   youtube: (props: IconProps) => (
