@@ -127,7 +127,7 @@ export const DATA = {
         },
         {
           type: "Website",
-          href: "",
+          href: "https://package-installer-website.vercel.app/",
           icon: <Icons.globe className="size-3" />
         },
         {
