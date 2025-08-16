@@ -132,7 +132,7 @@ export const DATA = {
         },
         {
           type: "NPM",
-          href: "https://www.npmjs.com/package/package-installer-cli",
+          href: "https://www.npmjs.com/package/@0xshariq/package-installer",
           icon: <Icons.npm className="size-3" />
         }
       ],
