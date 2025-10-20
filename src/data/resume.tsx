@@ -19,6 +19,8 @@ export const DATA = {
     "ExpressJS",
     "TailwindCSS",
     "MongoDB",
+    "Docker",
+    "React Native",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -132,8 +134,23 @@ export const DATA = {
         },
         {
           type: "NPM",
-          href: "https://www.npmjs.com/package/package-installer-cli",
+          href: "https://www.npmjs.com/package/@0xshariq/package-installer",
           icon: <Icons.npm className="size-3" />
+        },
+        {
+          type: "PYPI",
+          href: "https://pypi.org/project/package-installer-cli/",
+          icon: null
+        },
+        {
+          type: "RUBYGEM",
+          href: "https://rubygems.org/gems/package-installer-cli",
+          icon: null
+        },
+        {
+          type: "RUST CRATE",
+          href: "https://crates.io/crates/package-installer-cli",
+          icon: null
         }
       ],
       image: "/package.png",
@@ -391,4 +408,17 @@ export const DATA = {
       video: "",
     },
   ],
+  hackathons: [
+    {
+      title: "Appwrite Hackathon",
+      dates: "Oct 1st - 31st, 2025",
+      location: "Mumbai, India",
+      description:
+        "Developed a CLI tool for modern development workflows. Create projects, manage dependencies, analyze codebases, and streamline your development process with intelligent automation.",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Dlcc0ciMZTNJPVlLqDUVbIHgd3veGgFlrw&s",
+      mlh: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Dlcc0ciMZTNJPVlLqDUVbIHgd3veGgFlrw&s",
+      links: ["https://hacktoberfest.appwrite.network/?dub_id=NJbax4it54iqaqLe"],
+    },
+  ]
 } as const;
