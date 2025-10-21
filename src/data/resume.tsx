@@ -51,9 +51,16 @@ export const DATA = {
 
         navbar: true,
       },
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/sharique1303",
+        icon: Icons.instagram,
+
+        navbar: true,
+      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:khanshariq92213@gmail.com",
         icon: Icons.email,
 
         navbar: false,

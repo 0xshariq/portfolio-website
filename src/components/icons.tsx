@@ -229,4 +229,38 @@ export const Icons = {
       />
     </svg>
   ),
+  instagram: (props: IconProps) => {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 169.063 169.063"
+        {...props}
+      >
+        <linearGradient
+          id="a"
+          x1="84.531"
+          x2="84.531"
+          y1="3.515"
+          y2="165.548"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#feda75" />
+          <stop offset=".2" stopColor="#fa7e1e" />
+          <stop offset=".4" stopColor="#d62976" />
+          <stop offset=".6" stopColor="#962fbf" />
+          <stop offset=".8" stopColor="#4f5bd5" />
+          <stop offset="1" stopColor="#4f5bd5" />
+        </linearGradient>
+        <path
+          fill="url(#a)"
+          d="M122.406 0H46.656C20.938 0 0 20.938 0 46.656v75.75c0 25.719 20.938 46.656 46.656 46.656h75.75c25.719 0 46.656-20.937 46.656-46.656v-75.75C169.063 20.938 148.125 0 122.406 0zm30.844 122.406c0 17.094-13.75 30.844-30.844 30.844h-75.75c-17.094 0-30.844-13.75-30.844-30.844v-75.75c0-17.094 13.75-30.844 30.844-30.844h75.75c17.094 0 30.844 13.75 30.844 30.844v75.75z"
+        />
+        <path
+          fill="#fff"
+          d="M84.531 41.063c-23.758 0-43 19.242-43 43s19.242 43 43 43 43-19.242 43-43-19.242-43-43-43zm0 70.688c-15.297 0-27.688-12.391-27.688-27.688S69.234 56.375 84.531 56.375s27.688 12.391 27.688 27.688-12.391 27.688-27.688 27.688z"
+        />
+        <circle fill="#fff" cx="129.921" cy="39.842" r="9.604" />
+      </svg>
+    );
+  }
 };
