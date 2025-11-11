@@ -1,63 +1,61 @@
 ---
-title: "Introducing Package Installer CLI: Modern Web App Scaffolding Made Easy"
+title: "Introducing Package Installer CLI v3.17.7 — Modern Web App Scaffolding Made Even Easier"
 publishedAt: "2025-08-02"
-summary: "Package Installer CLI Tool"
+updatedAt: "2025-11-11"
+summary: "Package Installer CLI v3.17.7: interactive scaffolding, database-aware ORM selection, improved templates, and better cross-platform packaging."
 ---
 
+# 🚀 Package Installer CLI v3.17.7 — Modern Web App Scaffolding Made Even Easier
 
-# 🚀 Package Installer CLI: Modern Web App Scaffolding Made Easy
+Version 3.17.7 of Package Installer CLI (@0xshariq/package-installer) focuses on polish, clarity, and workflow correctness. It brings a highly-requested improvement — database-aware ORM selection — plus many quality-of-life updates to templates, features, and packaging.
 
-## Introduction
+If you haven't used Package Installer CLI yet, it's an interactive, cross-platform tool that scaffolds production-ready projects across many languages and frameworks (React, Next.js, Express, Rust, Python, and more). The CLI also helps you add features (auth, analytics, databases, monitoring) to existing projects with `pi add`.
 
-Modern web development is fast-paced, but setting up a new project can still be tedious and error-prone. Developers often spend hours configuring frameworks, languages, UI libraries, databases, and ORMs before writing a single line of business logic. **[Package Installer CLI](https://www.npmjs.com/package/package-installer-cli)** solves this by providing a beautiful, interactive, and highly flexible CLI that scaffolds production-ready projects in minutes.
-
-## Motivation
-
-Why another CLI? Most existing tools are either framework-specific or lack flexibility for full-stack, multi-language, or database-driven setups. [Package Installer CLI](https://www.npmjs.com/package/package-installer-cli) is designed for:
-
-- **Polyglot teams**: Supports JavaScript, TypeScript, Rust, and more
-- **Full-stack development**: Easily combine frontend and backend templates
-- **Rapid prototyping**: Get started with best practices and modern tooling
-- **Customization**: Choose exactly what you need—UI libraries, bundlers, src structure, Tailwind CSS, database, ORM, etc.
-
-## ✨ Key Features
-
-- **Interactive CLI** with beautiful UI and strict prompt order
-- **Argument-based project name** (supports `pi my-app` or `pi .` for current directory)
-- **Framework, language, and UI library selection**
-- **Dynamic database & ORM selection** (ORMs shown are specific to the selected database)
-- **Automatic dependency installation** (`pnpm` or `npm`)
-- **Cross-platform path handling**
-- **Graceful exit and error messaging**
-- **Combination templates** for full-stack setups
-- **Extensible via `template.json`**
-
-## 🆕 What's New: Database-Specific ORM Selection
-
-The latest release introduces **database-specific ORM selection**. When you choose a database (e.g., PostgreSQL, MySQL, MongoDB), the CLI only shows ORMs compatible with that database, as defined in `template.json`. This prevents mismatches and streamlines setup.
-
-<Highlight>
-{`
-if (database && fwConfig.databases[database] && Array.isArray(fwConfig.databases[database].orms)) {
-  const dbOrms = fwConfig.databases[database].orms;
-  if (dbOrms.length > 0) {
-    // Prompt for ORM selection
-  }
-}
-`}
-</Highlight>
-
-## Installation
-
-Install globally via npm:
+Install the latest version:
 
 ```bash
-npm install -g package-installer-cli
+npm install -g @0xshariq/package-installer@3.17.7
+# or
+pnpm add -g @0xshariq/package-installer@3.17.7
 ```
 
-## CLI Walkthrough
+## Why this release
 
-### 1. Start the CLI
+We heard from users that mismatches between chosen databases and ORMs during interactive setup caused confusion and broken scaffolds. This release makes template choices safer and more discoverable by limiting ORM choices to only those compatible with the selected database (as defined in `templates/template.json`).
+
+Other improvements include template refinements (Vite / Next.js App Router / shadcn/ui wiring), updated Docker and bundling guidance, and general documentation clarifications pulled from the `core-cli/docs/` directory.
+
+## ✨ Highlights — What’s new in v3.17.7
+
+- Database-specific ORM selection
+  - When you select a database (PostgreSQL, MySQL, MongoDB, etc.), the CLI now only shows compatible ORMs (Prisma, TypeORM, Mongoose, Drizzle, etc.). This prevents misconfiguration and streamlines the setup flow.
+  - Example (internal):
+
+    ```js
+    if (database && fwConfig.databases[database] && Array.isArray(fwConfig.databases[database].orms)) {
+      const dbOrms = fwConfig.databases[database].orms;
+      if (dbOrms.length > 0) {
+        // Prompt for ORM selection (only the compatible list)
+      }
+    }
+    ```
+
+- Templates & scaffolding
+  - Improved Next.js App Router template: better shadcn/ui wiring, Tailwind defaults, and clearer server/client boundaries.
+  - React (Vite) templates tuned for fast dev experience (hot reload, strict TypeScript, ESLint + Prettier integration).
+  - Fullstack combination templates (React + Express, React + NestJS) have clearer database/ORM wiring and example env files.
+
+- Features ecosystem
+  - `pi add database` now surfaces recommended ORMs per database and includes migration helper scripts when supported.
+  - AI, analytics, auth, monitoring, and Docker features have updated documentation and provider examples in `core-cli/docs/features.md`.
+
+- Packaging & distribution
+  - Bundles and Docker images include clearer tags and recommended usage per the README's Docker section.
+  - The CLI's packaging scripts (`scripts/create-distribution-bundle.sh`, `scripts/create-node-binary.sh`) were tuned for consistent artifacts across platforms.
+
+## Quick CLI walkthrough (updated)
+
+1. Start the CLI
 
 ```bash
 pi my-app
@@ -65,101 +63,71 @@ pi my-app
 package-installer my-app
 ```
 
-### 2. Interactive Prompts
+2. Interactive prompts (improved flow)
 
-You'll be guided through a series of questions:
+- Project name: argument or prompt (`pi my-app` or `pi .`)
+- Framework: React, Next.js, Vue, Express, Rust, etc.
+- Language: TypeScript, JavaScript, Rust, Python
+- UI library: shadcn, Material UI, Chakra, etc. (when available for the chosen framework)
+- Bundler: Vite, Webpack (framework-dependent)
+- Src structure: whether to include a `src/` layout
+- Tailwind CSS: optional
+- Database: PostgreSQL, MySQL, MongoDB, none
+- ORM: only shows ORMs compatible with the selected database (new)
 
-- **Project name**: Use argument or prompt
-- **Framework**: React, Next.js, Vue, Angular, Express, Rust, etc.
-- **Language**: TypeScript, JavaScript, Rust
-- **UI library**: Shadcn, Material UI, etc. (if available)
-- **Bundler**: Vite, Webpack, etc. (framework-specific)
-- **Src directory**: Choose if you want a `src/` structure
-- **Tailwind CSS**: Add Tailwind for modern styling
-- **Database**: Select from supported databases
-- **ORM**: Only ORMs compatible with your database are shown
+3. Project creation & dependency installation
 
-### 3. Project Creation & Dependency Installation
+The CLI copies the selected template, configures environment files, and runs the detected package manager (`pnpm`, `yarn`, or `npm`) to install dependencies automatically. It will try to detect your preferred package manager by looking for lockfiles and user preferences.
 
-The CLI copies the selected template, installs dependencies (`pnpm` or `npm`), and provides next steps.
+4. Success message & next steps
 
-### 4. Success Message & Next Steps
+After scaffolding, you'll see a short, helpful summary with commands to run the dev server, lint, test, and build.
 
-You'll see a styled summary with commands to start development, build, and more.
-
-## Advanced Features
-
-- **Combination Templates**: Scaffold full-stack projects with pre-configured frontend and backend
-- **Rust Support**: Build modern Rust apps with basic or advanced templates
-- **Graceful Exit**: Beautiful goodbye and error messages
-- **Auto-detection**: Installs dependencies using the best available package manager
-
-## Template Configuration: `template.json`
-
-The CLI is powered by a flexible `template.json` file. Here’s a simplified example:
-
-```json
-{
-  "frameworks": {
-    "nextjs": {
-      "languages": ["typescript", "javascript"],
-      "ui": ["shadcn", "material-ui"],
-      "databases": {
-        "postgresql": { "orms": ["prisma", "typeorm"] },
-        "mongodb": { "orms": ["mongoose"] },
-        "none": { "orms": [] }
-      },
-      "options": ["src", "tailwind"],
-      "bundlers": ["vite", "webpack"]
-    }
-    // ... other frameworks ...
-  }
-}
-```
-
-You can easily add new frameworks, languages, databases, or ORMs by editing this file.
-
-## Real-World Use Cases
-
-- **Startup MVP**: Quickly scaffold a Next.js + PostgreSQL + Prisma app
-- **Enterprise**: Standardize project structure for teams
-- **Hackathons**: Save time on setup, focus on building
-- **Learning**: Explore different stacks and configurations
-
-## Troubleshooting & Tips
-
-- If a template is missing, check the `templates/` directory and `template.json`
-- Use `pi .` to scaffold in the current directory
-- For Rust projects, ensure you have `cargo` installed
-- For full-stack templates, run frontend and backend in separate terminals
-- Check the generated `README.md` for framework-specific instructions
-
-## Roadmap & Future Plans
-
-- **More frameworks**: Svelte, SolidJS, Python/Django, etc.
-- **Custom template creation**: User-defined templates
-- **Plugin system**: Extend CLI with custom logic
-- **Cloud integration**: Deploy directly from CLI
-
-## Example Workflow
+## Example flow (PostgreSQL + Prisma)
 
 ```bash
-$ pi my-app
-🚀 Choose a framework: Next.js
-💻 Choose a language: TypeScript
-🧩 Do you want to add a UI library? Yes
-✨ Choose a UI library: Shadcn
-📦 Choose a bundler: Vite  ( only for reactjs and reactjs combination templates )
-📂 Do you want a src directory? Yes
-🎨 Do you want to use Tailwind CSS? Yes
-🗄️ Choose a database: PostgreSQL
-🔧 Choose an ORM: Prisma
+$ pi create my-app
+# Choose Next.js -> TypeScript -> Tailwind -> PostgreSQL
+# When prompted for ORM, you will only see the compatible ORMs (e.g. Prisma, TypeORM)
 ```
 
-## Conclusion
+This prevents accidentally choosing an ORM that doesn't support your selected database and ensures generated templates include the correct migration and schema helpers.
 
-[Package Installer CLI](https://www.npmjs.com/package/package-installer-cli) is the fastest way to start modern web projects with best practices, flexibility, and beautiful developer experience. Whether you’re building a startup MVP, a full-stack enterprise app, or just learning, this CLI will save you time and help you focus on what matters—building great software.
+## Where to find more details
+
+- Full CLI docs: see `core-cli/README.md` (quick start, commands) and the docs folder: `core-cli/docs/`.
+- Templates reference: `core-cli/docs/templates.md` — details on frontend, backend, fullstack, and Rust templates.
+- Features reference: `core-cli/docs/features.md` — all `pi add` features and provider lists.
+- Installation & Docker: `core-cli/docs/installation.md` and `core-cli/docs/docker.md`.
+
+## Troubleshooting & tips
+
+- If a template or provider is missing, check the `templates/` directory and `templates/template.json` for supported combinations.
+- Use `pi .` to scaffold in the current directory.
+- For Rust templates, ensure `cargo` is installed and on your PATH.
+- For full-stack templates, run frontend and backend in separate terminals (or use the Docker compose templates included).
+
+## Roadmap & next steps
+
+- Add more database/ORM mappings (Drizzle, MikroORM, Prisma adapters) and improve automated migrations.
+- More templates: Svelte, SolidJS, Python/Django, advanced mobile templates.
+- Plugin system for custom template logic and community templates.
+- Cloud deployment integrations directly from the CLI (Vercel, Netlify, Fly, AWS shortcuts).
+
+## Changelog (selected)
+
+- v3.17.7 — database-aware ORM selection; template improvements; packaging/documentation clarifications
+- v3.17.6 — minor template fixes and dependency updates
 
 ---
 
-Ready to build your next modern web app? Try [Package Installer CLI](https://www.npmjs.com/package/package-installer-cli) today!
+Ready to try it? Install or upgrade to v3.17.7 and scaffold a project in minutes:
+
+```bash
+npm install -g @0xshariq/package-installer@3.17.7
+pi create my-app
+```
+
+For full docs and examples, browse the `core-cli/docs` directory in the repository.
+
+Happy scaffolding! ✨
