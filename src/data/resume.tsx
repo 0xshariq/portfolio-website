@@ -427,5 +427,16 @@ export const DATA = {
       mlh: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Dlcc0ciMZTNJPVlLqDUVbIHgd3veGgFlrw&s",
       links: ["https://hacktoberfest.appwrite.network/?dub_id=NJbax4it54iqaqLe"],
     },
+    {
+      title: "Devfolio Hackathon",
+      dates: "Nov 1st - 30th, 2025",
+      location: "Mumbai, India",
+      description:
+        "A powerful, fast, and lightweight note-taking application for your terminal, built with Go and Bubble Tea.A powerful, fast, and lightweight note-taking application for your terminal, built with Go and Bubble Tea.",
+      image:
+        "https://hackthisfall.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F976fa65248ec49729382aebd38de94ab%2Fassets%2Fcover%2F719.png&w=1440&q=100",
+      mlh: "https://hackthisfall.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F976fa65248ec49729382aebd38de94ab%2Fassets%2Fcover%2F719.png&w=1440&q=100",
+      links: ["https://devfolio.co/projects/note-taking-terminal-app-b017", "https://hackthisfall.devfolio.co/overview"],
+    },
   ]
 } as const;
