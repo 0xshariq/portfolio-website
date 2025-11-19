@@ -438,5 +438,16 @@ export const DATA = {
       mlh: "https://hackthisfall.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F976fa65248ec49729382aebd38de94ab%2Fassets%2Fcover%2F719.png&w=1440&q=100",
       links: ["https://devfolio.co/projects/note-taking-terminal-app-b017", "https://hackthisfall.devfolio.co/overview"],
     },
+    {
+      title: "Lingo.Dev Hackathon",
+      dates: "Nov 13th - 16th, 2025",
+      location: "Mumbai, India",
+      description:
+        "A powerful, fast, and lightweight note-taking application for your terminal, built with Go and Bubble Tea.A powerful, fast, and lightweight note-taking application for your terminal, built with Go and Bubble Tea.",
+      image:
+        "https://www.wemakedevs.org/_next/static/media/logo.b39bc0f0.svg",
+      mlh: "https://www.wemakedevs.org/_next/static/media/logo.b39bc0f0.svg",
+      links: ["https://www.wemakedevs.org/hackathons/lingohack25"],
+    },
   ]
 } as const;
