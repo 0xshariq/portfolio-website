@@ -80,6 +80,28 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Totion - Note Taking App",
+      href: "https://github.com/0xshariq/totion",
+      dates: "Nov 2025",
+      active: true,
+      description: "A powerful, fast, and lightweight note-taking application for your terminal, built with Go and Bubble Tea.",
+      technologies: ["Go", "Bubble Tea"],
+      links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/totion",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "https://github.com/0xshariq/totion/raw/main/totion-demo/totion-homepage.png",
+      video: "",
+    },
+    {
       title: "EduLearn - Learning Management System",
       href: "https://learning-management-system-taupe-eta.vercel.app/",
       dates: "May 2024 - Present",
