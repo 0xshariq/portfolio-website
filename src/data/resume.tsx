@@ -84,7 +84,7 @@ export const DATA = {
       href: "https://github.com/0xshariq/mediaproc",
       dates: "Jan 2026 - Present",
       active: true,
-      description: "A powerful, fast, and lightweight note-taking application for your terminal, built with Go and Bubble Tea.",
+      description: "Universal media processing CLI with an extensible plugin architecture. One tool to process all your media - images, videos, audio, documents, and more.",
       technologies: ["TypeScript", "NodeJS", "CLI"],
       links: [
         {
