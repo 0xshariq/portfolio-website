@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/mumbai",
   description: "Full Stack Developer",
   summary:
-    "I am a passionate Full Stack Developer with a keen interest in building innovative web applications. I have experience in developing responsive and user-friendly interfaces using ReactJS, NextJS, and TailwindCSS. I am also proficient in backend development with NodeJS and ExpressJS, and I have a strong understanding of database management with MongoDB. I am always eager to learn new technologies and improve my skills. I believe in writing clean, maintainable code and following best practices in software development. I am currently pursuing a B.Tech in Computer Science and looking for internship opportunities to gain practical experience in the industry. I am excited to contribute to projects that make a difference and help solve real-world problems. I am also interested in exploring AI and machine learning technologies to enhance my web applications. I am a team player and enjoy collaborating with others to achieve common goals. I am committed to continuous learning and professional growth in the field of web development. I am looking forward to connecting with like-minded individuals and organizations that share my passion for technology and innovation. I am open to new opportunities and challenges that will help me grow as a developer and make a positive impact in the tech community.",
+    "Passionate full stack developer skilled in React, Next.js, Tailwind CSS, Node.js, Express, MongoDB, CLI tool development, and the Rust, Go, and JavaScript ecosystems. Focused on building clean, scalable, user-friendly applications. B.Tech CSE student seeking internships, eager to learn, explore AI/ML, collaborate with teams, and solve real-world problems with impactful technology.",
   avatarUrl: "/me.jpeg",
   skills: [
     "ReactJS",
@@ -79,6 +79,33 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "MediaProc - One CLI to Process All Your Media",
+      href: "https://github.com/0xshariq/mediaproc",
+      dates: "Jan 2026 - Present",
+      active: true,
+      description: "A powerful, fast, and lightweight note-taking application for your terminal, built with Go and Bubble Tea.",
+      technologies: ["TypeScript", "NodeJS", "CLI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://docs-mediaproc.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/mediaproc",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/0xshariq/mediaproc-docs",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/mediaproc.png",
+      video: "",
+    },
     {
       title: "Totion - Note Taking App",
       href: "https://github.com/0xshariq/totion",
