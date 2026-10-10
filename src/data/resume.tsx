@@ -4,10 +4,10 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Sharique Chaudhary",
   initials: "SC",
-  url: "https://portfolio-sigma-rose-22.vercel.app/",
-  location: "Mumbai , India",
+  url: "https://sharique.me",
+  location: "Mumbai, India",
   locationLink: "https://www.google.com/maps/place/mumbai",
-  description: "Full Stack Developer",
+  description: "Software Engineer building full-stack products and systems infrastructure with Rust and TypeScript.",
   summary:
     "Passionate full stack developer skilled in React, Next.js, Tailwind CSS, Node.js, Express, MongoDB, CLI tool development, and the Rust, Go, and JavaScript ecosystems. Focused on building clean, scalable, user-friendly applications. B.Tech CSE student seeking internships, eager to learn, explore AI/ML, collaborate with teams, and solve real-world problems with impactful technology.",
   avatarUrl: "/me.jpeg",

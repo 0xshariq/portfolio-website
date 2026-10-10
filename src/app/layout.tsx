@@ -1,76 +1,16 @@
-import Navbar from "@/components/navbar";
-import { ThemeProvider } from "@/components/theme-provider";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { DATA } from "@/data/resume";
-import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import "./globals.css";
+import Navbar from "@/components/navbar"
+import { ThemeProvider } from "@/components/theme-provider"
+import { TooltipProvider } from "@/components/ui/tooltip"
+import { DATA } from "@/data/resume"
+import { cn } from "@/lib/utils"
+import type { Metadata, Viewport } from "next"
+import { Inter as FontSans } from "next/font/google"
+import "./globals.css"
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" })
+const siteDescription = "Software Engineer building Rust infrastructure, TypeScript and Next.js applications, real-time systems, developer tooling, and AI products."
 
-export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
-  title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
-  },
-  description: DATA.description,
-  openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
-    locale: "en_US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  twitter: {
-    title: `${DATA.name}`,
-    card: "summary_large_image",
-  },
-  verification: {
-    google: "",
-    yandex: "",
-  },
-};
+export const metadata: Metadata = { metadataBase: new URL(DATA.url), title: { default: "Sharique Chaudhary | Software Engineer · Full-Stack + Systems", template: "%s | Sharique Chaudhary" }, description: siteDescription, openGraph: { title: "Sharique Chaudhary | Software Engineer · Full-Stack + Systems", description: siteDescription, siteName: "Sharique Chaudhary", locale: "en_US", type: "website" }, twitter: { title: "Sharique Chaudhary | Software Engineer", description: siteDescription, card: "summary_large_image" }, robots: { index: true, follow: true } }
+export const viewport: Viewport = { themeColor: "#fafafa", width: "device-width", initialScale: 1 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-      <link rel="icon" type="image" href="logo.png" />
-      </head>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
-          fontSans.variable
-        )}
-      >
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <Navbar />
-          </TooltipProvider>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
-}
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en" suppressHydrationWarning><head><link rel="icon" href="/logo.png" /></head><body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}><ThemeProvider attribute="class" defaultTheme="light"><TooltipProvider delayDuration={0}>{children}<Navbar /></TooltipProvider></ThemeProvider></body></html> }
