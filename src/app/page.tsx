@@ -1,59 +1,30 @@
-import { ArrowUpRight, Code2, Github, Mail, MapPin, Terminal } from "lucide-react";
-import Link from "next/link";
-import { ProjectCard } from "@/components/project-card";
-import { DATA } from "@/data/resume";
+import Link from "next/link"
+import { ArrowDown, ArrowUpRight, Github, Mail, MapPin } from "lucide-react"
+import { PortfolioProjectCard } from "@/components/portfolio-project-card"
+import { DATA } from "@/data/resume"
+import { categoryLabels, currentProject, featuredProjects } from "@/data/portfolio"
 
-const featuredProjects = DATA.projects.slice(0, 6);
-const toolkit = ["Rust", "Go", "TypeScript", "Next.js", "Node.js", "PostgreSQL", "Docker", "AI tooling"];
+const focusAreas = [
+  ["01", "Frontend", "Interfaces that make complex workflows legible."],
+  ["02", "Backend", "APIs, data models, and infrastructure built to last."],
+  ["03", "Real-time", "Shared state and live systems with failure modes in mind."],
+  ["04", "AI + tooling", "Developer tools and AI workflows that improve the loop."],
+]
 
 export default function Page() {
-  return (
-    <main className="mx-auto flex w-full max-w-5xl flex-col gap-24 pb-24 pt-8 sm:gap-32 sm:pt-16">
-      <section id="home" className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-        <div className="flex flex-col gap-7">
-          <div className="eyebrow"><span className="status-dot" /> Available for internships and collaborations</div>
-          <div className="flex flex-col gap-5">
-            <p className="font-mono text-sm text-muted-foreground">Hi, I'm Sharique.</p>
-            <h1 className="max-w-3xl text-5xl font-semibold tracking-[-0.06em] text-balance sm:text-7xl">I build tools that make complex systems feel simple.</h1>
-            <p className="max-w-xl text-lg leading-8 text-muted-foreground">Full-stack engineer and computer science student focused on developer tools, real-time products, and thoughtful interfaces. Currently exploring Rust, distributed systems, and AI-native workflows.</p>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Link className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5" href="#projects">See selected work <ArrowUpRight className="size-4" /></Link>
-            <Link className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium transition-colors hover:bg-muted" href={`mailto:${DATA.contact.email}`}>Get in touch <Mail className="size-4" /></Link>
-          </div>
-        </div>
-        <div className="code-panel hidden lg:block">
-          <div className="flex items-center justify-between border-b border-border px-5 py-3 text-xs text-muted-foreground"><span>sharique.config</span><span>01</span></div>
-          <pre className="overflow-x-auto p-5 text-sm leading-7"><code><span className="code-muted">const</span> engineer = {'{'}{"
-"}  name: <span className="code-string">&quot;Sharique Chaudhary&quot;</span>,{'
-'}  focus: [<span className="code-string">&quot;systems&quot;</span>, <span className="code-string">&quot;products&quot;</span>],{'
-'}  basedIn: <span className="code-string">&quot;Mumbai, India&quot;</span>,{'
-'}  learning: <span className="code-string">&quot;Rust + distributed systems&quot;</span>{"
-"}{'}'};</code></pre>
-        </div>
-      </section>
+  return <main className="mx-auto flex w-full max-w-5xl flex-col gap-28 pb-24 pt-8 sm:gap-36 sm:pt-16">
+    <section id="home" className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end"><div className="flex flex-col gap-7"><p className="eyebrow"><span className="status-dot" /> Open to junior software engineering opportunities</p><div><p className="font-mono text-sm text-muted-foreground">Sharique Chaudhary / Software Engineer</p><h1 className="mt-5 max-w-3xl text-5xl font-semibold tracking-[-0.07em] text-balance sm:text-7xl">I build products and systems that hold up under complexity.</h1><p className="mt-6 max-w-xl text-lg leading-8 text-muted-foreground">Full-stack engineer working across Rust infrastructure, TypeScript and Next.js products, real-time systems, developer tooling, and AI workflows.</p></div><div className="flex flex-wrap gap-3"><Link className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background hover:-translate-y-0.5" href="#work">View selected work <ArrowDown className="size-4" /></Link><Link className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium hover:bg-muted" href="/resume.pdf">Resume <ArrowUpRight className="size-4" /></Link><Link className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium hover:bg-muted" href={DATA.contact.social.GitHub.url} target="_blank" rel="noreferrer"><Github className="size-4" /> GitHub</Link></div></div><aside className="border-l border-border pl-6 text-sm text-muted-foreground"><p className="font-mono text-xs uppercase tracking-[0.16em]">Based in</p><p className="mt-3 flex items-center gap-2 text-foreground"><MapPin className="size-4" /> Mumbai, India</p><p className="mt-8 font-mono text-xs uppercase tracking-[0.16em]">Currently learning</p><p className="mt-3 leading-6">Rust systems design, indexing, distributed systems, and reliable AI-native workflows.</p></aside></section>
 
-      <section id="about" className="section-grid">
-        <div className="section-label"><span>01</span><h2>About</h2></div>
-        <div className="flex max-w-2xl flex-col gap-6"><p className="text-2xl leading-relaxed tracking-tight">I care about the layer where engineering quality meets human clarity.</p><p className="leading-7 text-muted-foreground">From a universal media CLI to terminal-native productivity tools, I enjoy working close to the problem. My work spans product engineering, open source, and the infrastructure that makes software dependable.</p><div className="flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mumbai, India <span className="mx-1 text-border">/</span> B.Tech CSE, 2023–2027</div></div>
-      </section>
+    <section id="about" className="section-grid"><div className="section-label"><span>01</span><h2>About</h2></div><div className="max-w-2xl"><p className="text-2xl leading-relaxed tracking-tight">I like working where product clarity meets engineering depth.</p><p className="mt-6 leading-7 text-muted-foreground">My work moves between user-facing applications and the systems beneath them. I care about clear APIs, resilient real-time behavior, useful abstractions, and shipping software with enough evidence to trust it.</p><p className="mt-5 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> B.Tech Computer Science · 2023–2027</p></div></section>
 
-      <section id="toolkit" className="section-grid">
-        <div className="section-label"><span>02</span><h2>Toolkit</h2></div>
-        <div className="flex max-w-2xl flex-wrap gap-2">{toolkit.map((skill) => <span key={skill} className="rounded-full border border-border px-3 py-1.5 font-mono text-xs text-muted-foreground transition-colors hover:border-foreground hover:text-foreground">{skill}</span>)}</div>
-      </section>
+    <section id="focus" className="section-grid"><div className="section-label"><span>02</span><h2>What I build</h2></div><div className="grid max-w-3xl gap-x-8 gap-y-8 sm:grid-cols-2">{focusAreas.map(([number, title, body]) => <div key={title} className="border-t border-border pt-4"><span className="font-mono text-xs text-muted-foreground">{number}</span><h3 className="mt-4 text-lg font-medium">{title}</h3><p className="mt-2 text-sm leading-6 text-muted-foreground">{body}</p></div>)}</div></section>
 
-      <section id="projects" className="flex flex-col gap-10">
-        <div className="section-heading"><div><div className="section-kicker"><Code2 className="size-4" /> Selected work</div><h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Projects with a point of view.</h2></div><Link href={DATA.contact.social.GitHub.url} target="_blank" rel="noreferrer" className="hidden items-center gap-2 text-sm text-muted-foreground hover:text-foreground sm:flex">All on GitHub <ArrowUpRight className="size-4" /></Link></div>
-        <div className="grid gap-5 md:grid-cols-2">{featuredProjects.map((project) => <ProjectCard key={project.title} href={project.href} title={project.title} description={project.description} dates={project.dates} tags={project.technologies} image={project.image} video={project.video} links={project.links} />)}</div>
-      </section>
+    {currentProject && <section id="current" className="rounded-2xl border border-border bg-muted/30 p-7 sm:p-10"><div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between"><div className="max-w-2xl"><p className="section-kicker">Currently building</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">{currentProject.title}</h2><p className="mt-4 text-lg leading-8 text-muted-foreground">{currentProject.summary}</p><div className="mt-6 flex flex-wrap gap-2">{currentProject.metrics.map((metric) => <span key={metric} className="rounded-full border border-border px-3 py-1.5 font-mono text-xs">{metric}</span>)}</div></div><Link href={`/work/${currentProject.slug}`} className="inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background">Read the build notes <ArrowUpRight className="size-4" /></Link></div></section>}
 
-      <section id="opensource" className="section-grid border-t border-border pt-10">
-        <div className="section-label"><span>03</span><h2>Open source</h2></div>
-        <div className="flex max-w-2xl flex-col gap-5"><div className="flex items-start justify-between gap-6"><div><div className="flex items-center gap-2 font-mono text-sm"><Terminal className="size-4" /> 0xshariq/mediaproc</div><p className="mt-2 leading-7 text-muted-foreground">A universal media-processing CLI with an extensible plugin architecture for images, video, audio, and documents.</p></div><Link href="https://github.com/0xshariq/mediaproc" target="_blank" rel="noreferrer" aria-label="View Mediaproc on GitHub" className="rounded-full border border-border p-2 transition-colors hover:bg-muted"><Github className="size-4" /></Link></div><div className="flex flex-wrap gap-2">{["TypeScript", "CLI", "Plugin architecture"].map((tag) => <span key={tag} className="rounded-full bg-muted px-3 py-1 font-mono text-xs text-muted-foreground">{tag}</span>)}</div></div>
-      </section>
+    <section id="work" className="flex flex-col gap-10"><div className="section-heading"><div><p className="section-kicker">03 / Selected work</p><h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">A small set of systems and products.</h2></div><div className="flex gap-4 text-sm text-muted-foreground">{Object.entries(categoryLabels).map(([slug, label]) => <Link key={slug} href={`/${slug}`} className="hover:text-foreground">{label}</Link>)}</div></div><div className="grid gap-5 md:grid-cols-2">{featuredProjects.map((project) => <PortfolioProjectCard key={project.slug} project={project} />)}</div></section>
 
-      <section id="contact" className="rounded-2xl border border-border bg-muted/40 p-7 sm:p-12"><div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between"><div className="max-w-xl"><div className="section-kicker"><Mail className="size-4" /> Contact</div><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Have a problem worth building around?</h2><p className="mt-4 leading-7 text-muted-foreground">I'm open to internships, collaborations, and conversations about developer tools and systems.</p></div><Link className="inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background" href={`mailto:${DATA.contact.email}`}>Email me <ArrowUpRight className="size-4" /></Link></div></section>
-    </main>
-  );
+    <section id="opensource" className="section-grid"><div className="section-label"><span>04</span><h2>Open source</h2></div><div className="max-w-2xl"><h3 className="text-2xl font-semibold tracking-tight">Tools should be useful before they are impressive.</h3><p className="mt-4 leading-7 text-muted-foreground">I publish developer tools and experiments across GitHub, npm, and crates.io. MediaProc is the clearest example: a universal media CLI designed around an extensible plugin architecture.</p><Link href="/open-source" className="mt-6 inline-flex items-center gap-2 text-sm font-medium hover:underline">Explore open source <ArrowUpRight className="size-4" /></Link></div></section>
+
+    <section id="contact" className="border-t border-border pt-12"><div className="max-w-2xl"><p className="section-kicker"><Mail className="size-4" /> 05 / Contact</p><h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Have a problem worth building around?</h2><p className="mt-5 text-lg leading-8 text-muted-foreground">I am open to junior software engineer, full-stack developer, and systems-focused opportunities.</p><div className="mt-7 flex flex-wrap gap-4"><Link href={`mailto:${DATA.contact.email}`} className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background">Email me <ArrowUpRight className="size-4" /></Link><Link href={DATA.contact.social.LinkedIn.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium hover:bg-muted">LinkedIn <ArrowUpRight className="size-4" /></Link></div></div></section>
+  </main>
 }
