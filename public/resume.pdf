@@ -1,75 +1,171 @@
-This is the first page of a resume for Sharique Chaudhary, detailing their professional summary, engineering experience, and selected projects.
+%PDF-1.4
+%���� ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 7 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://linkedin.com/in/0xshariq)
+>> /Border [ 0 0 0 ] /Rect [ 307.5665 737.8847 399.3285 748.2047 ] /Subtype /Link /Type /Annot
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/0xshariq)
+>> /Border [ 0 0 0 ] /Rect [ 406.3461 737.8847 483.2989 748.2047 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://sharique.me)
+>> /Border [ 0 0 0 ] /Rect [ 490.3165 737.8847 537.6337 748.2047 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/nizaam-islamic-ecosystem)
+>> /Border [ 0 0 0 ] /Rect [ 57.02362 561.9692 217.4976 576.2772 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/0xshariq/ghost-ai)
+>> /Border [ 0 0 0 ] /Rect [ 115.9529 332.0687 237.3914 343.4687 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/0xshariq/coinpulse)
+>> /Border [ 0 0 0 ] /Rect [ 123.689 223.7207 251.464 235.1207 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 8 0 R 9 0 R 10 0 R ] /Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 18 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
 
-# Text:
-Sharique Chaudhary
-Software Engineer | Full-Stack + Systems
-khanshariq92213@gmail.com | +91 72081 79779 | Thane, India | linkedin.com/in/0xshariq | github.com/0xshariq | sharique.me
+>> /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/0xshariq/skew-news)
+>> /Border [ 0 0 0 ] /Rect [ 129.6489 783.6047 264.2734 795.0047 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/0xshariq/bookified)
+>> /Border [ 0 0 0 ] /Rect [ 120.1152 675.2567 245.7812 686.6567 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://bookified-azure-three.vercel.app)
+>> /Border [ 0 0 0 ] /Rect [ 254.3624 675.2567 271.7854 686.6567 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/Annots [ 12 0 R 13 0 R 14 0 R ] /Contents 20 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 18 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
 
-PROFESSIONAL SUMMARY
-Software engineer focused on systems and full-stack development, with hands-on experience building
-Rust infrastructure and TypeScript/Next.js applications. Designed a domain-agnostic Rust platform and
-an indexing engine, with experience spanning runtime/lifecycle systems, reliability, real-time data
-pipelines, backend APIs, and Al-enabled products.
+>> /Type /Page
+>>
+endobj
+16 0 obj
+<<
+/PageMode /UseNone /Pages 18 0 R /Type /Catalog
+>>
+endobj
+17 0 obj
+<<
+/Author (Sharique Chaudhary) /CreationDate (D:20261006193846+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261006193846+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Sharique Chaudhary - Resume) /Trapped /False
+>>
+endobj
+18 0 obj
+<<
+/Count 2 /Kids [ 11 0 R 15 0 R ] /Type /Pages
+>>
+endobj
+19 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2670
+>>
+stream
+Gb!;eflGh,(4GpYgnuT6>,&Q`>PH;dNoG)?j#E@9H`"q=&.(pa.=_Fj4&4ntk5Z2FH&Iq].\53l&g`.>q`X+/*kD(?lta$RH827K<uuWN:$:SsS.SIkBKY*t^ZV_#L9]e860(raH]IQT@Q]G#NZ6q1VRu;CZ%kKU?48_s6%i%JB12Ng&`<htPPQLGpSU%=:R4\4pC4%<-#7OK\9UQmG;T7G%<&G'@W1f:OE.kb;U/'D09,2`qd&<8<]Sh$[J%)PV2cKBEMo=qf@N];)U!hrS87shYF;1&:26)#dP!GfWG9/I[T)+4r\H$bP$[7*(Bi]_9t.h$=MHnZQhYRI9(E%Y]s/o(,%JpY+enqY-'OU:Hg:K7n?9fgM8IBa$J,0=H5-6oK%Di>;g^C?C-J;#R1"b1el9[G0(h+d*lZ5LnEfRsOI&'GdVO.NjFR3%Q.8(n)7=Y@Hm.cd1UC;8ds\9>(-3u&a3qZ_iQoHj9u!D\I)k]U_fMBeVP"CXrn7+:=6%E`ps&'p':SjhqXsIOs)q"_:5d2M2HiLjNA\I8Wm:FfT!V_'BU#0urP[>kd,_J1,8=W!qd4#JkW;AopQam0e:jTiPIQH,[]_CA<S1Pf9uV0OP,bt%Lrl1LVX,d:Fud=sKdp//ecWKQ7M&HSYD.:RIjhiC>\9L<N@9mCMp?JBk=ns?OE8[H=uTU?5cWL_H;jB+VF=W0SFR2uo*tiFZ4InSKp%]g06niZ&h5WY'l$/Ifg;^=()bdgbC\8cV,q9<?5f#hQ1GO5?u=Y%f.@`<P"B@'kXO-4`=E;1kLiR1nBUY,BjM'''8<B'bQh/Wbt?,]c$ENh.'ZBb/>'aE*(E(U42rXXhXfbNQY]\fs&,m;L0)[LknJF"=+pJ@U`Q-L*M8A4kJsJj2#bf=0#jfEiuRc2'.;Z#n]fND9HkjD]!?>CmFJ9q@BBk84^`(LoPS:Od:*aKJ5(X!>nK<OP>B.f``@1d'l8T:)J?(p!,?l4rhoILk`onE<gs$8@8DqYO#f'&,:@Sc[*s;%KT+:/P-/uW(0<D[V,!J>&i]3NP*aO-#0hPIO6FI$bF.K-MR;iN[ial-I/@Sr@c*$ZkR2rijJ8@#!ONiKfhJ^=34<?^h=I3e_bWP.>OB7SZ*%L8+\0Z/X#D>k1f97XpsU*#L5?S&P0SkR60PH`agUZU4%=&FTX:+C'Q)t@H'^NQB]`KIFe<.dA^$Uj7Xf+6HVS%hIkHj:]K!?o+a:E(iS>5m+!uNW:cX%>Vq8;jl,RIU@T=3!5QO'PMs*uO1ttNhoc4#\fF?HI;@O&U.9!P'$k9N6SSR=i0f_XX>*p@XY?MMCO3+D$]!aZ%GZD!P-V.Da@g5p&XO67i1c*YiWaW>5Z\n(LY.+/M>k;.V*'iA\<&J%bD-t(>/Qk@>5$>)d3eNu"<u#gXJ>)AWdmpnT?2#_&p\kPNG>7anG;8LNYcV!E%Vf",RbMNUg0uX>EErUOXj=iGoSp]L(1N9HN,&U3@`?@AQ6dM--1I-@B\n1hRop!rFKP2s]MR3[)hs%U,IS/o]g&0KPq4^uZ7Jp$1Q68t/T8"Ih-LfqJ1PC.1d"$u;PER(/qNU[UQPiieHa0@d<>uRD/g'hma'H?-mfUoel$u/i6d]fPmKj<2HnMI^,H>XL`.^-i\9c$]ka0bn]X&`,M.h8Qq^DUf)8b!ggYB(=2VWe\C:KdS"^r2q2T*)@*BB7FOVL7NI][=CdQt&UiosK;4@>^3D`G<[FF[0ciaXZ\L@7k6??bE\lp:7CWORjKW[GXFZeuk%S8\dfitU.[1%'6Pp7"&pA0#[na&2tlFJ5"B'm7YE3A%C]6/"6VbVGUBUnc+I<\$pCjGsYB;Um_anTg9IS#p=I`KuL#9?1UL)UlA3@PF8`(;0ID^VAO9)p=DLc#KUe(CPJj'8[\Wk6E`[C;tm?TA'-/<#l^-GD;9NKH[Iqn4leIGQL`]eJNVkI\3i4O&'P0YB+3^Fe>Kca8>,3Hm`D"kT(C&9LdO(uF5fL$"T.-NcCA=+"&Ilk5ALF0Hg6"o-!q=tCFo4"0q+*H;W00q^`k3,i;(AFf<K:D]%Pi_G-iBBYX5"(>CYGG^7Lc'3dXX):0Ek*Cp/Q@NZj1]>;l[aR.["K#<UXDVRWeDM_sq<"n(A+GKXVJ<Kk!QK4;2Ao1=N$M6?9'J5!.h0CIA6GC9hI'Xde./&"+,*JJ5=kg'2!8d3Ht&Ye<)]2QlNe@cQ;27mV0,V(R/e72E6/Q,froZRqDiYil"gYmcqXSO@%\P+;l8/??fpVlTZ+76":$KV.X<B'h.[GMl%klnCKY>gkc&1EjXtWU07=6M?JrFjkkT^TlT\?8Si&sUJ*c$a6-[iVq44"iO*F)ZoK`"tpuLK/qPTIkGGDA:8`OTJ@.Mp[BiBq$IEg$;q&Mqo):N-3&^N(p3D1@=$R#u*VSDnBJpt`0kS2PE)JkNG-TdD:0D:niq'h\OG:$j]HqgKsih$+%\H>45?FTT><`tKPq(CiUdiT\Cbcub9LQ]o=X\qSP.'f^N.qVO)bY6Zkm8&Y*1e/)?7&Jk?q4'/1Cr+O,/IU:""5t7=OG=%)p?/D>F;0bE:3Q!7$/SJ's#?D*B#`36];Zi7ITVDk!!tJH,n.li75aaWd4h-G;7&u-c/1Hlrp0_qSSW\_2:M$R7MKt-`j^<%pHNCZM#[~>endstream
+endobj
+20 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1747
+>>
+stream
+Gb!;chfIL@&:X@\Ytl78OjEkUnS#^u8Vl\78itMlM\(ZR=ON<nad>j'q!K.n5\sob0PtZ=N.gou<o<=nhl[,0IOtF^/HE@:S6f<*faprpEet1o&C0=2Db&C$dL1kF42).iBG.6'#Ik6cS,0D2NZ&G*p0^*g^YB-F5f<85*jNp#iW:ZlK^*<.?>T7#!p,3)55k_H^-r7Hd2edq'qJ!J[h+&>]6@64\BOB.<l]^^Xd8pn1>Zr5/`3/.[Zi:XmFr(:f<M]*`i<`9+t50?bm-7'"T*?l1!Ggo_pj_+?PFu^nZt^)nU0>a:8\,+GP'YBq8?TK[uAVa^pc!%-4+P<<JL#\NmI!lQ5/&Lm5KTdCn%eOIJtk5Fln+EQsgiE/52CPRP:9Z6!.R@1<ec/qG<<XdXZQsUJWMnX>6H8;fQG8<6p_),,kUp>ZR8cdH@2(mqKU1B#&=aUbmk5!CZmI\7S@4@!l[8ag7O_YM[C*0RJ!4W%K[+/Rhr`)Vg@5g*34#qF;9ACB]:G)Y`')\$aubgL4O%gW;SGeh"!I.3YZ@?6g7+K;tma<b><3N0c5.1RbY568_Ie(c.TNHR^;:8NCBm>QK\[=IN1`E\g+n&U';4'cQSIU1ImmGTFtb$S"GCU/%ami)[?M!EQZ)38I75q?Kla\0.?jELim'9^n9=M8>>;Zf$%T&pjOmaMIq>b(N66=bQS@8\U9[_X4V0MZQ[:7;PIFOmO@q"O6TX"Y;jPI>_3.*"tcqX;N]^mTA%gRg@72'JmYT6t]U&]rGpkT[Hcs;uLMSR)>SNq.YJs-Dha]kIf[5r/OJgiq:(KohcCbbP#eT&-#6TH(uOpVlsHhI(TekoA:4W:V=nr^Uq)88sr^0eBRdpDittFdiWsR^^W_UKhJK[\DX+6j+,hnZ#'.lnDHou?rH1`M6)m4%`UW]F9K^%Q8ac!3UOD-!Ge*$,W8;KdKTec-r<Seo`93*)P(RKE!?"#)XRu+7"V?`'enh1DNaV%>Y<C55%)6(mM+t6);Toh]eIC9%pq[.2O$b_*)*k-R7Zt5MA6in3D6=aG1?WW<6/W'1s1g9,LU:4O"h<K"d8")D6hY<@FGZncVR5^-KI@@#+ZOVV[Yb$"7c?J0u541&fOK'Tn^S7Yf,_<bH!qtC^AG/_/L7Y&Y`nf3bT`,@?*5fG(t&/ri"=!$?/@+OrZT.P=)_#^[&D>epP$.FrXKAQf6p9[im[,WM17WAQIhgfKG*oNgf@*i$W_uZ=Im8m^Gd\6ZSeUf@Ppqb"HR=Z%;A7p>3L;)5E%:40]h'af`P;d<2tFWTSu0Z:IpI)sH8t>p"XR0O^DUqh7!mHa[,ZdLp$)'d$A&J,V.>``t.8.:N%B+lDse#VFAt(s]8hEo"_7:.Go:f;R'kCo`]r!O>HcI#RHca@6PJpd-1+k@KCM/e2UWmbt7$(1C)[*>[@?/C:;XAQWc)=F8laAQfI-bB/=!.^`.]eP">i^:7&$)C)f$!3b8F#A>0g7/KRshnYnTLnl':p&OZfa*;[t>IQs-I=FW)C>QK:9GWHcI8td6J0?H/#<^_Adf1rcdA*Xa[WiY5#(QWb6CdeboZlI4Y?0%CK52YHl`C[M%8Q*uhm3hNE;eh.lB7O3;kaKo*\V,JKhYR31->lM*@Vmkc/>st:%7k6cEYP-lqcsX"uqmR$69,=J9"iaS7`3\g.s[;B2gaE4)oJHOG(>d*Hp]R8LO.Idp#Ne3,U]pCYQQA4G%bGfXCXZ.cKT0q>;<A~>endstream
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000061 00000 n 
+0000000112 00000 n 
+0000000219 00000 n 
+0000000331 00000 n 
+0000000515 00000 n 
+0000000694 00000 n 
+0000000865 00000 n 
+0000000980 00000 n 
+0000001175 00000 n 
+0000001363 00000 n 
+0000001551 00000 n 
+0000001806 00000 n 
+0000001996 00000 n 
+0000002186 00000 n 
+0000002379 00000 n 
+0000002618 00000 n 
+0000002688 00000 n 
+0000002988 00000 n 
+0000003056 00000 n 
+0000005818 00000 n 
+trailer
+<<
+/ID 
+[<da4bebbea4d72c3c73d93f323a00dc8a><da4bebbea4d72c3c73d93f323a00dc8a>]
+% ReportLab generated PDF document -- digest (opensource)
 
-ENGINEERING EXPERIENCE
-Nizaam Islamic Ecosystem | Founder & Systems Engineer
-Rust | Systems Engineering | Infrastructure | Indexing | Testing | Open Source
-github.com/nizaam-islamic-ecosystem
-September 2026 – Present
-• Designed and implemented Nizaam Core, a domain-agnostic Rust infrastructure layer: typed contracts
-and identities, runtime/lifecycle, transport and message framing, security boundaries, observability,
-retry/idempotency, internal events, and a Control Plane.
-• Built the Nizaam Indexing Engine on top of Core: index versioning, query planning and retrieval,
-build/update/rebuild/publication workflows, integrity validation, capacity accounting, and durable
-execution with recovery.
-• Validated Core with 2,311 passing tests (1,576 unit, 735 integration) and zero failures, including
-conformance, fault-injection, and stress suites; the Indexing Engine includes 992 test functions.
-• Published nizaam-core v1.0.1 and nizaam-indexing v1.0.0 on crates.io (MIT); now developing further
-engines on top of Core.
-
-SELECTED PROJECTS
-Ghost Al github.com/0xshariq/ghost-ai
-August 2026
-Next.js, TypeScript, Clerk, Prisma, PostgreSQL, Liveblocks, React Flow, Trigger.dev, Gemini, Vercel Al SDK
-• Built a real-time collaborative system-design workspace (React Flow, Liveblocks) with synchronized
-canvas state, presence, live cursors, and persistent project state.
-• Designed an asynchronous Al workflow using Trigger.dev and Gemini to generate and edit
-architecture diagrams and Markdown technical specifications as durable background tasks.
-
-CoinPulse
-github.com/0xshariq/coinpulse
-August 2026 – Present
-Next.js, TypeScript, SWR, Lightweight Charts, CoinGecko API, Binance WebSocket, Tailwind CSS
-• Engineered a shared Binance WebSocket manager with subscription deduplication, connection
-pooling, and automatic reconnection with exponential backoff for real-time market data.
-• Implemented bounded LRU/TTL caching and rate-limit-aware, timeout-guarded CoinGecko requests
-with data validation.
-
-# Images:
-There are no images on this page.
-
-This is the second and final page of a resume, detailing educational background and a full list of technical skills.
-
-# Text:
-## TECHNICAL SKILLS
-
-**Languages**
-Rust, TypeScript, JavaScript, Python, Go, C/C++
-
-**Full-Stack & Backend**
-Next.js, React, Node.js, Express.js, Tailwind CSS, REST APIs,
-WebSockets, Authentication
-
-**Systems & Engineering**
-System Design, API Design, Concurrency, Testing, Caching, Real-Time
-Systems
-
-**Data & Infrastructure**
-PostgreSQL, MongoDB, MySQL, Redis, Prisma, Docker, Linux, Git, GitHub
-
-## EDUCATION
-
-**B.Tech. in Computer Science** | New Horizon Institute of Technology & Management 2023-2027
-
-# Images:
-None
+/Info 17 0 R
+/Root 16 0 R
+/Size 21
+>>
+startxref
+7657
+%%EOF
