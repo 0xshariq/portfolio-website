@@ -1,0 +1,75 @@
+This is the first page of a resume for Sharique Chaudhary, detailing their professional summary, engineering experience, and selected projects.
+
+# Text:
+Sharique Chaudhary
+Software Engineer | Full-Stack + Systems
+khanshariq92213@gmail.com | +91 72081 79779 | Thane, India | linkedin.com/in/0xshariq | github.com/0xshariq | sharique.me
+
+PROFESSIONAL SUMMARY
+Software engineer focused on systems and full-stack development, with hands-on experience building
+Rust infrastructure and TypeScript/Next.js applications. Designed a domain-agnostic Rust platform and
+an indexing engine, with experience spanning runtime/lifecycle systems, reliability, real-time data
+pipelines, backend APIs, and Al-enabled products.
+
+ENGINEERING EXPERIENCE
+Nizaam Islamic Ecosystem | Founder & Systems Engineer
+Rust | Systems Engineering | Infrastructure | Indexing | Testing | Open Source
+github.com/nizaam-islamic-ecosystem
+September 2026 – Present
+• Designed and implemented Nizaam Core, a domain-agnostic Rust infrastructure layer: typed contracts
+and identities, runtime/lifecycle, transport and message framing, security boundaries, observability,
+retry/idempotency, internal events, and a Control Plane.
+• Built the Nizaam Indexing Engine on top of Core: index versioning, query planning and retrieval,
+build/update/rebuild/publication workflows, integrity validation, capacity accounting, and durable
+execution with recovery.
+• Validated Core with 2,311 passing tests (1,576 unit, 735 integration) and zero failures, including
+conformance, fault-injection, and stress suites; the Indexing Engine includes 992 test functions.
+• Published nizaam-core v1.0.1 and nizaam-indexing v1.0.0 on crates.io (MIT); now developing further
+engines on top of Core.
+
+SELECTED PROJECTS
+Ghost Al github.com/0xshariq/ghost-ai
+August 2026
+Next.js, TypeScript, Clerk, Prisma, PostgreSQL, Liveblocks, React Flow, Trigger.dev, Gemini, Vercel Al SDK
+• Built a real-time collaborative system-design workspace (React Flow, Liveblocks) with synchronized
+canvas state, presence, live cursors, and persistent project state.
+• Designed an asynchronous Al workflow using Trigger.dev and Gemini to generate and edit
+architecture diagrams and Markdown technical specifications as durable background tasks.
+
+CoinPulse
+github.com/0xshariq/coinpulse
+August 2026 – Present
+Next.js, TypeScript, SWR, Lightweight Charts, CoinGecko API, Binance WebSocket, Tailwind CSS
+• Engineered a shared Binance WebSocket manager with subscription deduplication, connection
+pooling, and automatic reconnection with exponential backoff for real-time market data.
+• Implemented bounded LRU/TTL caching and rate-limit-aware, timeout-guarded CoinGecko requests
+with data validation.
+
+# Images:
+There are no images on this page.
+
+This is the second and final page of a resume, detailing educational background and a full list of technical skills.
+
+# Text:
+## TECHNICAL SKILLS
+
+**Languages**
+Rust, TypeScript, JavaScript, Python, Go, C/C++
+
+**Full-Stack & Backend**
+Next.js, React, Node.js, Express.js, Tailwind CSS, REST APIs,
+WebSockets, Authentication
+
+**Systems & Engineering**
+System Design, API Design, Concurrency, Testing, Caching, Real-Time
+Systems
+
+**Data & Infrastructure**
+PostgreSQL, MongoDB, MySQL, Redis, Prisma, Docker, Linux, Git, GitHub
+
+## EDUCATION
+
+**B.Tech. in Computer Science** | New Horizon Institute of Technology & Management 2023-2027
+
+# Images:
+None
