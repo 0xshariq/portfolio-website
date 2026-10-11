@@ -14,21 +14,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return project ? { title: project.title, description: project.summary } : {}
 }
 
-function NizaamArchitecture() {
+function CaseStudyDiagram({ title, description, nodes }: { title: string; description?: string; nodes: { label: string; detail: string }[] }) {
   return (
-    <div className="mt-8 grid gap-3 sm:grid-cols-3" aria-label="Nizaam architecture flow">
-      {[
-        ["01", "Calling engine", "Requests a capability or submits domain work."],
-        ["02", "Nizaam Core", "Coordinates identity, contracts, routing, transport, and runtime safety."],
-        ["03", "Specialist engine", "Owns domain meaning, durable execution, and typed results."],
-      ].map(([number, title, detail], index) => (
-        <div key={title} className="architecture-node relative rounded-xl border border-border bg-background/60 p-4">
-          <span className="font-mono text-xs text-accent">{number}</span>
-          <h3 className="mt-3 font-medium">{title}</h3>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">{detail}</p>
-          {index < 2 ? <span className="architecture-arrow hidden sm:block" aria-hidden="true">→</span> : null}
-        </div>
-      ))}
+    <div className="mt-8 rounded-2xl border border-border bg-background/70 p-5 sm:p-6" aria-label={title}>
+      <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">{title}</p>
+      {description ? <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">{description}</p> : null}
+      <div className="mt-6 grid gap-3 sm:grid-cols-3">
+        {nodes.map((node, index) => (
+          <div key={node.label} className="architecture-node relative rounded-xl border border-border bg-card p-4">
+            <span className="font-mono text-xs text-accent">{String(index + 1).padStart(2, "0")}</span>
+            <h3 className="mt-3 font-medium">{node.label}</h3>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">{node.detail}</p>
+            {index < nodes.length - 1 ? <span className="architecture-arrow hidden sm:block" aria-hidden="true">→</span> : null}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
@@ -56,7 +56,6 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
               {project.tabs.map((tab, index) => <a key={tab.id} href={`#${tab.id}`} className={`rounded-lg border px-4 py-3 text-sm transition-colors hover:bg-muted ${index === 0 ? "border-accent/60 bg-muted" : "border-border"}`} aria-label={`Jump to ${tab.label}`}>{tab.label}</a>)}
             </nav>
           </div>
-          {project.slug === "nizaam" ? <NizaamArchitecture /> : null}
           {project.tabs.map((tab, index) => (
             <article id={tab.id} key={tab.id} className="scroll-mt-24 rounded-2xl border border-border bg-card p-6 sm:p-10">
               <div className="flex flex-col gap-8">
@@ -65,6 +64,8 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
                   <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">{tab.summary}</h2>
                   <ul className="mt-7 flex flex-col gap-4">{tab.details.map((detail) => <li key={detail} className="flex items-start gap-3 leading-7 text-muted-foreground"><CheckCircle2 className="mt-1 size-5 shrink-0 text-accent" />{detail}</li>)}</ul>
                 </div>
+                {tab.diagram ? <CaseStudyDiagram {...tab.diagram} /> : null}
+                {tab.sections?.length ? <div className="grid gap-6 border-t border-border pt-8 md:grid-cols-2">{tab.sections.map((section) => <section key={section.title}><h3 className="font-mono text-xs uppercase tracking-[0.16em] text-muted-foreground">{section.title}</h3><p className="mt-3 leading-7 text-muted-foreground">{section.body}</p>{section.bullets?.length ? <ul className="mt-4 flex flex-col gap-3">{section.bullets.map((bullet) => <li key={bullet} className="flex items-start gap-3 text-sm leading-6 text-muted-foreground"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-accent" />{bullet}</li>)}</ul> : null}</section>)}</div> : null}
                 <div className="flex flex-wrap gap-2 border-t border-border pt-6">{tab.links?.map((link) => <Link key={link.href} href={link.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-2 text-sm hover:bg-muted">{link.label}<ArrowUpRight className="size-4" /></Link>)}</div>
               </div>
             </article>
