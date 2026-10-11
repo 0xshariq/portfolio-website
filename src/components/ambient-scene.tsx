@@ -2,12 +2,14 @@
 
 import { Canvas, useFrame } from "@react-three/fiber"
 import { useRef } from "react"
+import { useReducedMotion } from "framer-motion"
 import * as THREE from "three"
 
 function OrbitalMesh() {
   const mesh = useRef<THREE.Mesh>(null)
+  const reducedMotion = useReducedMotion()
   useFrame((state, delta) => {
-    if (!mesh.current || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+    if (!mesh.current || reducedMotion) return
     mesh.current.rotation.x += delta * 0.035
     mesh.current.rotation.y += delta * 0.06
     mesh.current.position.y = Math.sin(state.clock.elapsedTime * 0.25) * 0.12
