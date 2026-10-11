@@ -19,6 +19,19 @@
   .section-label span { @apply text-[hsl(var(--accent))]; }
   .section-heading { @apply flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between; }
   .section-kicker { @apply flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em] text-muted-foreground; }
+  .ambient-scene { @apply pointer-events-none fixed inset-0 -z-10 overflow-hidden opacity-70; mask-image: radial-gradient(ellipse at 72% 18%, black 0%, transparent 58%); }
+  .ambient-scene canvas { @apply h-full w-full; }
+  .card-lift { transition: transform 220ms ease, border-color 220ms ease, background-color 220ms ease, box-shadow 220ms ease; }
+  .card-lift:hover { transform: translateY(-6px); box-shadow: 0 14px 32px hsl(var(--foreground) / 0.08); }
+  .profile-frame { @apply rounded-2xl border border-[hsl(var(--accent)/0.5)] bg-card/80 p-2 shadow-[0_0_0_6px_hsl(var(--accent)/0.07)]; }
+  .profile-frame img { @apply aspect-square w-full rounded-xl object-cover grayscale transition duration-500; }
+  .profile-frame:hover img { @apply grayscale-0; transform: scale(1.02); }
+  a, button { transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease; }
+  a:hover, button:hover { filter: brightness(1.12); }
+  .reveal { animation: reveal 700ms cubic-bezier(.2,.8,.2,1) both; }
+  .reveal-delay-1 { animation-delay: 100ms; }
+  .reveal-delay-2 { animation-delay: 180ms; }
+  @keyframes reveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }

@@ -19,7 +19,7 @@ export type PortfolioProject = {
 export const portfolioProjects: PortfolioProject[] = [
   {
     slug: "nizaam",
-    title: "Nizaam Core",
+    title: "Nizaam",
     eyebrow: "Currently building · indexing engine",
     summary: "A Rust indexing engine built around correctness, predictable performance, and a test suite that makes systems work visible.",
     problem: "Search and indexing infrastructure is easy to make fast in the happy path and difficult to make trustworthy under change.",
