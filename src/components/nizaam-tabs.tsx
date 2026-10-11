@@ -2,11 +2,12 @@
 
 import Link from "next/link"
 import { ArrowUpRight, CheckCircle2 } from "lucide-react"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import type { CaseStudyTab } from "@/data/portfolio"
 
 export function NizaamTabs({ tabs }: { tabs: CaseStudyTab[] }) {
   const [activeId, setActiveId] = useState(tabs[0]?.id ?? "")
+  const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({})
   const activeTab = tabs.find((tab) => tab.id === activeId) ?? tabs[0]
   if (!activeTab) return null
   const diagram = activeTab.diagram
@@ -16,10 +17,40 @@ export function NizaamTabs({ tabs }: { tabs: CaseStudyTab[] }) {
       <div className="border-b border-border pb-3">
         <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted-foreground">Explore the architecture</p>
         <div className="mt-4 flex flex-wrap gap-2" role="tablist" aria-label="Nizaam engines">
-          {tabs.map((tab) => <button key={tab.id} type="button" role="tab" aria-selected={tab.id === activeId} aria-controls={`panel-${tab.id}`} className={`rounded-lg border px-4 py-3 text-sm transition-colors hover:bg-muted ${tab.id === activeId ? "border-accent/60 bg-muted text-foreground" : "border-border text-muted-foreground"}`} onClick={() => setActiveId(tab.id)}>{tab.label}</button>)}
+          {tabs.map((tab, index) => {
+            const tabId = `tab-${tab.id}`
+            const panelId = `panel-${tab.id}`
+            return (
+              <button
+                key={tab.id}
+                ref={(element) => { tabRefs.current[tab.id] = element }}
+                id={tabId}
+                type="button"
+                role="tab"
+                aria-selected={tab.id === activeId}
+                aria-controls={panelId}
+                tabIndex={tab.id === activeId ? 0 : -1}
+                className={`rounded-lg border px-4 py-3 text-sm transition-colors hover:bg-muted ${tab.id === activeId ? "border-accent/60 bg-muted text-foreground" : "border-border text-muted-foreground"}`}
+                onClick={() => setActiveId(tab.id)}
+                onKeyDown={(event) => {
+                  if (event.key === "ArrowRight" || event.key === "ArrowDown" || event.key === "ArrowLeft" || event.key === "ArrowUp") {
+                    event.preventDefault()
+                    const direction = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : -1
+                    const nextIndex = (index + direction + tabs.length) % tabs.length
+                    tabRefs.current[tabs[nextIndex].id]?.focus()
+                  } else if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault()
+                    setActiveId(tab.id)
+                  }
+                }}
+              >
+                {tab.label}
+              </button>
+            )
+          })}
         </div>
       </div>
-      <article id={`panel-${activeTab.id}`} role="tabpanel" aria-labelledby={activeTab.id} className="scroll-mt-24 rounded-2xl border border-border bg-card p-6 sm:p-10">
+      <article id={`panel-${activeTab.id}`} role="tabpanel" aria-labelledby={`tab-${activeTab.id}`} className="scroll-mt-24 rounded-2xl border border-border bg-card p-6 sm:p-10">
         <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">{activeTab.label}</p>
         <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{activeTab.summary}</h2>
         <ul className="mt-7 flex max-w-3xl flex-col gap-4">{activeTab.details.map((detail) => <li key={detail} className="flex items-start gap-3 leading-7 text-muted-foreground"><CheckCircle2 className="mt-1 size-5 shrink-0 text-accent" />{detail}</li>)}</ul>

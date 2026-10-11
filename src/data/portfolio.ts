@@ -72,7 +72,7 @@ export const portfolioProjects: PortfolioProject[] = [
           { title: "Evidence", body: "The repository's test surface includes hundreds of Indexing Engine test functions, giving the long-term system work a concrete correctness feedback loop." },
         ],
         diagram: { title: "Index lifecycle", description: "Indexing is modeled as a controlled lifecycle rather than a single write function.", nodes: [{ label: "Define", detail: "Describe fields, keys, families, and retrieval semantics." }, { label: "Build and validate", detail: "Process data, check integrity, and create a versioned state." }, { label: "Publish and query", detail: "Expose an approved version for dependable retrieval." }] },
-        links: [{ label: "GitHub", href: "https://github.com/nizaam-islamic-ecosystem/indexing-engine" }, { label: "crates.io", href: "https://crates.io/crates/nizaam-indexing-engine" }, { label: "docs.rs", href: "https://docs.rs/nizaam-indexing-engine" }]
+        links: [{ label: "GitHub", href: "https://github.com/nizaam-islamic-ecosystem/indexing-engine" }, { label: "crates.io", href: "https://crates.io/crates/nizaam-indexing" }, { label: "docs.rs", href: "https://docs.rs/nizaam-indexing" }]
       },
       {
         id: "knowledge-graph", label: "Knowledge Graph Engine", summary: "An active-development engine for connecting entities, relationships, and provenance.",
