@@ -7,7 +7,7 @@ import * as THREE from "three"
 function OrbitalMesh() {
   const mesh = useRef<THREE.Mesh>(null)
   useFrame((state, delta) => {
-    if (!mesh.current) return
+    if (!mesh.current || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
     mesh.current.rotation.x += delta * 0.035
     mesh.current.rotation.y += delta * 0.06
     mesh.current.position.y = Math.sin(state.clock.elapsedTime * 0.25) * 0.12
